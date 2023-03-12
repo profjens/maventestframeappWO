@@ -1,7 +1,6 @@
 package js_fb5.w_hs.de.testmavenapp.components;
 
 import com.webobjects.appserver.WOActionResults;
-import com.webobjects.appserver.WOComponent;
 import com.webobjects.appserver.WOContext;
 import com.webobjects.eocontrol.EOEditingContext;
 import com.webobjects.foundation.NSArray;

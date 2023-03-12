@@ -70,9 +70,19 @@
 			<version>${webobjects.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.webobjects</groupId>
-			<artifactId>testmavenframework</artifactId>
+			<groupId>js-fb5.w-hs.de</groupId>
+			<artifactId>maventestframeWO</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+						<dependency>
+			<groupId>wonder.plugins</groupId>
+			<artifactId>PostgresqlPlugIn</artifactId>
+			<version>${wonder.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.5.4</version>
 		</dependency>		
 	</dependencies>
 </project>

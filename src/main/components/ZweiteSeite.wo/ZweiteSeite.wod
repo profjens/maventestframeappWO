@@ -1,0 +1,6 @@
+zeiten: AjaxDatePicker {
+	value = ferienstartDatum;
+	formatter = formatter;
+	id = "DateInputWithFormatterField1";
+	class = "form-control";
+}

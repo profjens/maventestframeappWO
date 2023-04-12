@@ -10,7 +10,7 @@
       <wo:loop list = "$uListe" item = "$aU">
         <li>
           <wo:str value = "$aU.vorName" />
-          | 
+          | <wo:str value = "$aU.my"
           <wo:hyperlink action = "$deleteUser">-</wo:hyperlink>
         </li>
       </wo:loop>
@@ -18,6 +18,7 @@
     <wo:hyperlink action = "$addUser">+ user</wo:hyperlink>
     <wo:form>
       <wo:textField value = "$aUser.vorName" />
+      <webobject name = "zeiten"></webobject>
       <wo:submit action = "$save" name = "sichern">sss</wo:submit>
     </wo:form>
   </body>

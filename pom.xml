@@ -70,11 +70,16 @@
 			<version>${webobjects.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>wonder.ajax</groupId>
+			<artifactId>Ajax</artifactId>
+			<version>${wonder.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>js-fb5.w-hs.de</groupId>
 			<artifactId>maventestframeWO</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-						<dependency>
+		<dependency>
 			<groupId>wonder.plugins</groupId>
 			<artifactId>PostgresqlPlugIn</artifactId>
 			<version>${wonder.version}</version>

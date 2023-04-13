@@ -70,6 +70,11 @@
 			<version>${webobjects.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.webobjects</groupId>
+			<artifactId>JavaJDBCAdaptor</artifactId>
+			<version>${webobjects.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>wonder.ajax</groupId>
 			<artifactId>Ajax</artifactId>
 			<version>${wonder.version}</version>
@@ -87,7 +92,7 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.5.4</version>
+			<version>42.2.11</version>
 		</dependency>		
 	</dependencies>
 </project>

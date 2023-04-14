@@ -40,6 +40,11 @@
 
 	<dependencies>
 		<dependency>
+  			<groupId>wonder.eof</groupId>
+  			<artifactId>ERAttributeExtension</artifactId>
+  			<version>${wonder.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>wonder.core</groupId>
 			<artifactId>ERExtensions</artifactId>
 			<version>${wonder.version}</version>

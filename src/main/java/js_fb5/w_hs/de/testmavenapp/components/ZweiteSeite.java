@@ -37,16 +37,28 @@ public class ZweiteSeite extends ERXComponent {
     	aUser.setVorName("test");
     	return null;
     }
-	private LocalDate ferienstartDatum;
+    public WOActionResults selectUser() {
+    	aUser = aU;
+    	if (aU.myTimeInJava()!=null) {
+    		setFerienstartDatum(aUser.myTimeInJava());
+    	}
+    	return null;
+    }
+    public WOActionResults save() {
+    	aUser.setMyTimeInJava(_ferienstartDatum);
+    	aUser.editingContext().saveChanges();
+    	return null;
+    }
+	private LocalDate _ferienstartDatum;
     public LocalDate getFerienstartDatum() {
     	if (aU!=null) {
-    		ferienstartDatum = aU.myTimeInJava();
+    		_ferienstartDatum = aU.myTimeInJava();
     	}
-    	return ferienstartDatum;
+    	return _ferienstartDatum;
     }
     public void setFerienstartDatum(LocalDate d) {
-    	if (aU!=null) {
-    		ferienstartDatum = d;
+    	if (aUser!=null) {
+    		_ferienstartDatum = d;
     	}
     }
     public WOActionResults deleteUser() {
@@ -56,10 +68,6 @@ public class ZweiteSeite extends ERXComponent {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-    	return null;
-    }
-    public WOActionResults save() {
-    	aUser.editingContext().saveChanges();
     	return null;
     }
 }
